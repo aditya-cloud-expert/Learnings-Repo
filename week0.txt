@@ -1,0 +1,14 @@
+<html>
+<head>
+<title>
+<body>
+<div> / <span>
+<h1> ... <h6>
+<p>
+<img>
+<a href="">
+<input id = "">
+<button onclick="">
+<b> <i>
+<center> Right Way to use this is Flex Box
+

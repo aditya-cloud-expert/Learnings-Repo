@@ -1,0 +1,59 @@
+// Filter
+/**
+ * Get even numbers from an array
+ */
+function getEvenNumbers(arr) {
+  return arr.filter(num => num % 2 === 0);
+}
+const evenNumbers = getEvenNumbers([1, 2, 3, 4, 5, 6, 7, 9, 10]);
+console.log(evenNumbers); // [2, 4, 6, 10]
+
+// Filter and Map
+const people = [
+  { gender: 'male', firstName: 'John' },
+  { gender: 'female', firstName: 'Jane' },
+  { gender: 'male', firstName: 'Bob' },
+  { gender: 'other', firstName: 'Emily' },
+  { gender: 'Male', firstName: 'Charlie' },
+];
+
+/**
+ * Get first names of all male people
+ */
+const maleFirstNames = people
+  .filter(person => person.gender.toLowerCase() === 'male')
+  .map(person => person.firstName);
+console.log(maleFirstNames); // ['John', 'Bob', 'Charlie']
+
+// Spread Operator
+/**
+ * Sum numbers using spread operator
+ */
+function sum(a, b, c) {
+  return a + b + c;
+}
+const numbers = [1, 2, 3];
+console.log(sum(...numbers)); // 6
+
+/**
+ * Sum any number of arguments using spread operator
+ */
+function sumAll(...values) {
+  return values.reduce((acc, curr) => acc + curr, 0);
+}
+console.log(sumAll(1, 2, 3, 4)); // 10
+
+// Reduce
+const numbersList = [1, 2, 3, 4];
+
+// Sum all numbers
+const sum = numbersList.reduce((acc, curr) => acc + curr, 0);
+console.log(sum); // 10
+
+// Multiply all numbers
+const product = numbersList.reduce((acc, curr) => acc * curr, 1);
+console.log(product); // 24
+
+// Find the maximum value
+const max = numbersList.reduce((acc, curr) => (curr > acc ? curr : acc));
+console.log(max); // 4

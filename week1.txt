@@ -57,3 +57,18 @@ console.log(product); // 24
 // Find the maximum value
 const max = numbersList.reduce((acc, curr) => (curr > acc ? curr : acc));
 console.log(max); // 4
+
+
+// Loose Equality (==)
+console.log(5 == '5'); // true
+// JavaScript converts the string '5' to the number 5 before the comparison
+
+console.log(0 == false); // true
+// JavaScript converts the boolean false to the number 0 before the comparison
+
+// Strict Equality (===)
+console.log(5 === '5'); // false
+// The operands are of different types (number and string), so they are not equal
+
+console.log(0 === false); // false
+// The operands are of different types (number and boolean), so they are not equal

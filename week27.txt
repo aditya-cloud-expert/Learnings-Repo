@@ -1,0 +1,4 @@
+Deployments Vs Replica Sets
+
+Deployments under the hood uses replicasets but what makes it different is rolling update and blue green Deployments
+

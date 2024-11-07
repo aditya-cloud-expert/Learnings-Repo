@@ -1,0 +1,8 @@
+Cert management
+Volumes and Persistent volumes
+Resource management 
+
+# Dont bake your application Variables into your code, instead pass them as Environment Variables in runtime.
+
+npm install dotenv --save
+require('dotenv')

@@ -1,0 +1,7 @@
+Namespaces
+Ingress
+Ingress Controller
+traefik / nginx
+ConfigMaps --> for the Variables that are not sensitive aka configuration Variables
+Secrets --> for the Variables that are sensitive for example passwords , api tokens etc
+ 
